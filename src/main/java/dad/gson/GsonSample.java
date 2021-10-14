@@ -1,3 +1,4 @@
+package dad.gson;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -19,6 +20,8 @@ public class GsonSample {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(p);
         System.out.println(json);
+
+        entrada.close();
 
     }
 }
